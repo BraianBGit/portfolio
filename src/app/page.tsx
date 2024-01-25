@@ -1,9 +1,9 @@
 "use client";
 import Image from 'next/image'
-import {BsFillMoonStarsFill} from "react-icons/bs";
 import {AiFillLinkedin, AiFillGithub, AiFillInstagram} from "react-icons/ai";
-import profilePic from "../../public/images/profile-pic.jpeg"
+import profilePic from "../../public/images/profile-pic.png"
 import {ThemeSwitcher} from "@/app/ThemeSwitcher";
+import ProjectCard from "@/app/components/projectCard";
 
 export default function Home() {
 
@@ -13,10 +13,10 @@ export default function Home() {
                 <nav className={"py-10 mb-12 flex justify-between items-center"}>
                     <h1 className={"text-xl font-burtons"}>Develop by Braian Biale</h1>
                     <ul className={"flex items-center"}>
-                        <ThemeSwitcher />
+                        <ThemeSwitcher/>
                         <li><a
                             className={"bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-6"}
-                            href={"#"}>Resume</a></li>
+                            href={"/files/cv-braianbiale-spanish.pdf"} download>Resume</a></li>
                     </ul>
                 </nav>
                 <div className={"text-center py-10"}>
@@ -35,10 +35,10 @@ export default function Home() {
                         handling integrations.
                     </p>
                 </div>
-                <div className={"text-5xl flex justify-center gap-16 py-3 text-gray-600"}>
-                    <AiFillLinkedin/>
-                    <AiFillGithub/>
-                    <AiFillInstagram/>
+                <div className={"text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400"}>
+                    <a href={"https://www.linkedin.com/in/braian-biale/"} target={"_blank"}><AiFillLinkedin/></a>
+                    <a href={"https://github.com/BraianBGit"} target={"_blank"}><AiFillGithub/></a>
+                    <a href={"https://www.instagram.com/braianbiale/"} target={"_blank"}> <AiFillInstagram/></a>
                 </div>
                 <div
                     className={"relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mx-auto mt-20 overflow-hidden md:w-96 md:h-96"}>
@@ -51,16 +51,20 @@ export default function Home() {
                         Job Experience
                     </h3>
                     <p className={"text-base py-2 leading-8 text-gray-800 dark:text-gray-400"}>
-                        My technical expertise includes React.js, Redux for state management, and tools like Postman for
+                        My technical expertise includes <span
+                        className={"text-teal-500"}>React.js</span>, <span
+                        className={"text-teal-500"}>Redux</span> for state management, and tools like <span
+                        className={"text-teal-500"}>Postman</span> for
                         endpoint testing. I am well-versed in version control using <span
                         className={"text-teal-500"}>GitHub</span>, following a branching
-                        structure aligned with Scrum principles.
+                        structure aligned with <span
+                        className={"text-teal-500"}>Scrum</span> principles.
                     </p>
                 </div>
             </section>
             <section>
                 <div>
-                    <h3 className={"text-3xl py-1"}>
+                    <h3 className={"text-3xl py-1 pt-10"}>
                         Projects I have worked on
                     </h3>
                     <p className={"text-base py-2 leading-8 text-gray-800 dark:text-gray-400"}>
@@ -71,36 +75,12 @@ export default function Home() {
                     </p>
                 </div>
                 <div className={"xl:flex gap-10"}>
-                    <div className={"flex flex-grow flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-900"}>
-                        <Image src={"https://picsum.photos/seed/pic/200/300"} alt={"project 1"} width={100}
-                               height={100}/>
-                        <h3 className={"text-lg font-medium pt-8 pb-2"}>Project Name</h3>
-                        <p className={"py-2"}>Project description</p>
-                        <h4 className={"py-4 text-teal-600"}>Technologies I used</h4>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>React.JS</p>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>Redux</p>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>Postman</p>
-                    </div>
-                    <div className={"flex flex-grow flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-900"}>
-                        <Image src={"https://picsum.photos/seed/pux/200/300"} alt={"project 1"} width={100}
-                               height={100}/>
-                        <h3 className={"text-lg font-medium pt-8 pb-2"}>Project Name</h3>
-                        <p className={"py-2"}>Project description</p>
-                        <h4 className={"py-4 text-teal-600"}>Technologies I used</h4>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>React.JS</p>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>Redux</p>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>Postman</p>
-                    </div>
-                    <div className={"flex flex-grow flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-900"}>
-                        <Image src={"https://picsum.photos/seed/pax/200/300"} alt={"project 1"} width={100}
-                               height={100}/>
-                        <h3 className={"text-lg font-medium pt-8 pb-2"}>Project Name</h3>
-                        <p className={"py-2"}>Project description</p>
-                        <h4 className={"py-4 text-teal-600"}>Technologies I used</h4>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>React.JS</p>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>Redux</p>
-                        <p className={"text-gray-800 py-1 dark:text-gray-400"}>Postman</p>
-                    </div>
+                    <ProjectCard imageSrc={"https://picsum.photos/seed/pr1/900/900"} imageAlt={"project 1"}
+                                 name={"Project 1"} description={"Project 1 description"} technologies={["React JS", "Redux", "Postman"]}/>
+                    <ProjectCard imageSrc={"https://picsum.photos/seed/pr2/900/900"} imageAlt={"project 2"}
+                                 name={"Project 2"} description={"Project 2 description"} technologies={["React JS", "Redux"]}/>
+                    <ProjectCard imageSrc={"https://picsum.photos/seed/pr3/900/900"} imageAlt={"project 3"}
+                                 name={"Project 3"} description={"Project 3 description"} technologies={["React JS", "Redux"]}/>
                 </div>
             </section>
         </main>
