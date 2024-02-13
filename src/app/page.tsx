@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import {AiFillLinkedin, AiFillGithub, AiFillInstagram} from "react-icons/ai";
 import profilePic from "../../public/images/profile-pic.png"
+import reactJsLogo from "../../public/images/technologies/react-logo.png"
+import postmanLogo from "../../public/images/technologies/postman-logo.png"
 import {ThemeSwitcher} from "@/app/ThemeSwitcher";
 import ProjectCard from "@/app/components/projectCard";
 
@@ -36,9 +38,9 @@ export default function Home() {
                     </p>
                 </div>
                 <div className={"text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400"}>
-                    <a href={"https://www.linkedin.com/in/braian-biale/"} target={"_blank"}><AiFillLinkedin/></a>
-                    <a href={"https://github.com/BraianBGit"} target={"_blank"}><AiFillGithub/></a>
-                    <a href={"https://www.instagram.com/braianbiale/"} target={"_blank"}> <AiFillInstagram/></a>
+                    <a className={"hover:scale-110 transition-transform"} href={"https://www.linkedin.com/in/braian-biale/"} target={"_blank"}><AiFillLinkedin/></a>
+                    <a className={"hover:scale-110 transition-transform"} href={"https://github.com/BraianBGit"} target={"_blank"}><AiFillGithub/></a>
+                    <a className={"hover:scale-110 transition-transform"} href={"https://www.instagram.com/braianbiale/"} target={"_blank"}> <AiFillInstagram/></a>
                 </div>
                 <div
                     className={"relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mx-auto mt-20 overflow-hidden md:w-96 md:h-96"}>
@@ -74,13 +76,17 @@ export default function Home() {
                         contributing to innovative solutions in front-end development.
                     </p>
                 </div>
-                <div className={"xl:flex gap-10"}>
-                    <ProjectCard imageSrc={"https://picsum.photos/seed/pr1/900/900"} imageAlt={"project 1"}
-                                 name={"Project 1"} description={"Project 1 description"} technologies={["React JS", "Redux", "Postman"]}/>
+                <div className={"flex flex-wrap flex-grow gap-10 py-10"}>
+                    <ProjectCard imageSrc={"https://picsum.photos/seed/pr1/900/900"} imageAlt={"kmp-app"}
+                                 name={"KMP App"}
+                                 description={"Desktop application that updates a motoparts store price list using different providers price lists"}
+                                 technologies={[reactJsLogo, postmanLogo]}/>
                     <ProjectCard imageSrc={"https://picsum.photos/seed/pr2/900/900"} imageAlt={"project 2"}
-                                 name={"Project 2"} description={"Project 2 description"} technologies={["React JS", "Redux"]}/>
+                                 name={"Project 2"} description={"Project 2 description"}
+                                 technologies={[reactJsLogo]}/>
                     <ProjectCard imageSrc={"https://picsum.photos/seed/pr3/900/900"} imageAlt={"project 3"}
-                                 name={"Project 3"} description={"Project 3 description"} technologies={["React JS", "Redux"]}/>
+                                 name={"Project 3"} description={"Project 3 description"}
+                                 technologies={[reactJsLogo]}/>
                 </div>
             </section>
         </main>
