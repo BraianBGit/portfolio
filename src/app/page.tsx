@@ -68,7 +68,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div>
-                    <ExperienceTimeline />
+                    <ExperienceTimeline/>
                 </div>
             </section>
             <section>
@@ -88,7 +88,7 @@ export default function Home() {
                         data.projects.map(project => <ProjectCard imageSrc={project.imageSrc}
                                                                   imageAlt={project.imageAlt} name={project.name}
                                                                   description={project.description}
-                                                                  technologies={project.technologies.map((technology: string) => technologies[technology])}
+                                                                  technologies={project.technologies.map((technology) => technologies[technology as keyof typeof technologies])}
                                                                   key={project.name}/>)
                     }
                 </div>
