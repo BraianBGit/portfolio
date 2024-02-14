@@ -8,10 +8,10 @@ const projectCard = ({imageSrc, imageAlt, name, description, technologies}: {
     technologies: string[]
 }) => {
     return <div
-        className={"flex flex-row flex-grow flex-shrink sm:basis-1/2 md:basis-2/3 xl:basis-2/5 shadow-lg rounded-xl bg-teal-50 dark:border-teal-400 dark:border dark:bg-transparent hover:scale-105 transition-transform"}
+        className={"flex flex-col sm:flex-row flex-grow flex-shrink sm:basis-1/2 md:basis-2/3 xl:basis-2/5 h-full shadow-lg rounded-xl bg-teal-50 dark:border-teal-400 dark:border dark:bg-transparent hover:scale-105 transition-transform"}
         key={name}>
         <Image src={imageSrc} alt={imageAlt} width={200}
-               height={200} className={"min-h-full"}/>
+               height={200} className={"min-h-full self-center"}/>
         <div className={"flex flex-col px-4 justify-center py-4"}>
             <h3 className={"text-xl font-medium pb-2"}>{name}</h3>
             <p className={"py-4"}>{description}</p>
