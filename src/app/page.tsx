@@ -6,6 +6,7 @@ import {ThemeSwitcher} from "@/app/ThemeSwitcher";
 import ProjectCard from "@/app/components/projectCard";
 import data from '../data/projects.json'
 import technologies from '../data/technologies.json'
+import ExperienceTimeline from "@/app/components/experienceTimeline";
 
 export default function Home() {
 
@@ -65,6 +66,9 @@ export default function Home() {
                         structure aligned with <span
                         className={"text-teal-500"}>Scrum</span> principles.
                     </p>
+                </div>
+                <div>
+                    <ExperienceTimeline />
                 </div>
             </section>
             <section>

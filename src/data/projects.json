@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "KMP Application",
-      "description": "Desktop application that updates a motoparts store price list using different providers price lists",
+      "description": "Desktop application that updates a motoparts store price list using different providers price lists.",
       "imageSrc": "/images/technologies/react-logo.png",
       "imageAlt": "kmp-app",
       "technologies": ["reactJS", "postman", "flask"],
