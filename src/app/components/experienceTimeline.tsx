@@ -4,7 +4,8 @@ const experienceTimeline = () => {
             <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
                 <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
                     <p className="ml-2 text-teal-500 uppercase tracking-loose">Experience Timeline</p>
-                    <p className="text-3xl md:text-4xl text-gray-800 dark:text-white leading-normal md:leading-relaxed mb-2">Experience as a
+                    <p className="text-3xl md:text-4xl text-gray-800 dark:text-white leading-normal md:leading-relaxed mb-2">Experience
+                        as a
                         developer</p>
                     <p className="text-sm md:text-base text-gray-800 dark:text-gray-50 mb-4">
                         Here’s a timeline summarizing my job experience working as a developer and software engineer.
@@ -25,10 +26,11 @@ const experienceTimeline = () => {
                                 <div className="order-1 w-5/12"></div>
                                 <div className="order-1 w-5/12 px-1 py-4 text-right">
                                     <p className="mb-3 text-base text-teal-500">Jan, 2023 - May, 2023</p>
-                                    <h4 className="mb-3 font-bold text-gray-800 dark:text-white text-lg md:text-2xl">Kossmann Motopartes</h4>
+                                    <h4 className="mb-3 font-bold text-gray-800 dark:text-white text-lg md:text-2xl">Kossmann
+                                        Motopartes</h4>
                                     <p className="text-sm md:text-base leading-snug text-gray-800 dark:text-gray-50 text-opacity-100">
                                         Develop a desktop application with the primary goal of acquiring
-                                        up-to-date product prices by extracting information from various suppliers'
+                                        up-to-date product prices by extracting information from various suppliers&apos;
                                         web-based price lists.
                                     </p>
                                 </div>
@@ -37,7 +39,8 @@ const experienceTimeline = () => {
                                 <div className="order-1 w-5/12"></div>
                                 <div className="order-1  w-5/12 px-1 py-4 text-left">
                                     <p className="mb-3 text-base text-teal-500">Jul, 2020 - Feb, 2022</p>
-                                    <h4 className="mb-3 font-bold text-gray-800 dark:text-white text-lg md:text-2xl">Sirius Software</h4>
+                                    <h4 className="mb-3 font-bold text-gray-800 dark:text-white text-lg md:text-2xl">Sirius
+                                        Software</h4>
                                     <p className="text-sm md:text-base leading-snug text-gray-800 dark:text-gray-50 text-opacity-100">
                                         Contributed as a front-end developer doing different kind of tasks: bug fixing,
                                         implementing new

@@ -17,7 +17,7 @@ const projectCard = ({imageSrc, imageAlt, name, description, technologies}: {
             <p className={"py-4"}>{description}</p>
             <div className={"flex gap-2 mt-auto"}>
                 {technologies.map(technology => <div
-                    className={"bg-teal-100 dark:border dark:border-teal-800 dark:bg-teal-800 rounded-xl p-2 hover:scale-110 transition-transform"}>
+                    className={"bg-teal-100 dark:border dark:border-teal-800 dark:bg-teal-800 rounded-xl p-2 hover:scale-110 transition-transform"} key={technology}>
                     <Image src={technology}
                            alt={imageAlt}
                            width={30}
