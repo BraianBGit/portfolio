@@ -7,7 +7,7 @@ const experienceTimeline = () => {
                     <p className="text-3xl md:text-4xl text-gray-800 dark:text-white leading-normal md:leading-relaxed mb-2">Experience as a
                         developer</p>
                     <p className="text-sm md:text-base text-gray-800 dark:text-gray-50 mb-4">
-                        Here’s a timeline summarising my job experience working as a developer and software engineer.
+                        Here’s a timeline summarizing my job experience working as a developer and software engineer.
                     </p>
                     <a href="https://www.linkedin.com/in/braian-biale/" target={"_blank"}
                        className="bg-transparent mr-auto hover:bg-teal-500 text-teal-500 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-teal-300 hover:border-transparent">
